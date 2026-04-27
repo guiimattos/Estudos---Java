@@ -1,8 +1,17 @@
-Programa em Java que solicite ao usuário a sua idade e informe se ele possui ingresso.
+````markdown
+## Exercício em Java: Validação de Entrada
 
-O programa deve verificar as seguintes condições:
+Desenvolva um programa em **Java** que solicite ao usuário sua **idade** e informe se ele **possui ingresso**.
 
-Se o usuário tiver 18 anos ou mais e possuir ingresso, deve exibir a mensagem:
-"Entrada permitida"
-Caso contrário, deve exibir a mensagem:
-"Entrada negada"
+O programa deve validar as seguintes condições:
+
+- Se o usuário tiver **18 anos ou mais** e **possuir ingresso**, o sistema deve exibir:
+
+Entrada permitida
+
+````
+* Caso contrário, o sistema deve exibir:
+
+```text
+Entrada negada
+```
