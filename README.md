@@ -1,7 +1,7 @@
 ````markdown
 ## Exercício em Java: Validação de Entrada
 
-Desenvolva um programa em **Java** que solicite ao usuário sua **idade** e informe se ele **possui ingresso**.
+Programa em **Java** que solicita ao usuário sua **idade** e informe se ele **possui ingresso**.
 
 O programa deve validar as seguintes condições:
 
