@@ -15,7 +15,7 @@ public class Main {
         } else {
             System.out.println("Entrada negada");
         }
-
+        
         scanner.close();
     }
 }
