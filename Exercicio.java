@@ -12,7 +12,7 @@ public class Exercicio {
         System.out.println("Digite sua idade:");
 
         System.out.println("Voce e estudante? true/false");
-        boolean estudante = scanner.nextBoolean();
+        boolean aluno = scanner.nextBoolean();
 
         if (valor >= 500) {
             System.out.println("desconto de 15%");
