@@ -1,0 +1,23 @@
+
+** PROCESSO - ARQUITETURA DE COMPUTADORES **
+
+Um processo pode estar nos estados em execução, bloqueado ou pronto. Transições
+entre estaos ocorrem como mostrado.
+
+Quem decide o primeiro processo dentro da lista de processos é o escalanador de processo;
+
+1. O processo é bloqueado aguardando uma entrada
+2. O escalanador seleciona outra processo
+3. O escalanador seleciona esse processo
+4. A entrada torna-se disponível
+
+Quantos processos podem estar em execução?
+R: Um de uma vez
+
+Processo - é um container, local de armazenar informações necessárias que seja executável 
+no CPU e seja restaurado quando for trocado de um processo para o outro
+
+EXPLICAR CADA ESTADO NO PROCESSO (NA PROVA)
+
+O Chrome está no processo, as abas do Chrome estão no Threads, as Threadas é um pouco
+mais simples que o processo.
