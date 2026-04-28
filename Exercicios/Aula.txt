@@ -17,7 +17,7 @@ R: Um de uma vez
 Processo - é um container, local de armazenar informações necessárias que seja executável 
 no CPU e seja restaurado quando for trocado de um processo para o outro
 
-EXPLICAR CADA ESTADO NO PROCESSO (NA PROVA)
+EXPLICAR CADA ESTADO NO PROCESSO NA PROVA
 
 O Chrome está no processo, as abas do Chrome estão no Threads, as Threadas é um pouco
 mais simples que o processo.
