@@ -1,3 +1,5 @@
+package Exercicios;
+
 import java.util.Scanner;
 
 public class Estudofor {
@@ -9,12 +11,10 @@ public class Estudofor {
 
         for (int i = 1; i <= numero; i++) {
             if (i % 2 == 0) {
-            System.out.println(i);
-
+                System.out.println(i);
+            }
         }
 
         sc.close();
     }
-}
-
 }
