@@ -19,13 +19,13 @@ public class Estudo {
         double nota3 = scanner.nextDouble();
 
         double resultado = (nota1 + nota2 + nota3) /3;
-        System.out.println("A sua media das notas e: " + resultado);
+        System.out.println("a sua média das notas é: " + resultado);
 
         if (resultado >= 7) {
             System.out.println("Aprovado");
         }
         else{
-            System.out.println("Voce esta abaixo da media, voce esta reprovado!");
+            System.out.println("Você está abaixo da média, você está reprovado!!");
         }
 
         scanner.close();
