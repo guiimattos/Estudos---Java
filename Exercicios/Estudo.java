@@ -18,7 +18,10 @@ public class Estudo {
         System.out.println("Coloque sua terceira nota:");
         double nota3 = scanner.nextDouble();
 
-        double resultado = (nota1 + nota2 + nota3) /3;
+        System.out.println("Coloque sua quarta nota:");
+        double nota4 = scanner.nextDouble();
+
+        double resultado = (nota1 + nota2 + nota3 + nota4) /3;
         System.out.println("a sua média das notas é: " + resultado);
 
         if (resultado >= 7) {
