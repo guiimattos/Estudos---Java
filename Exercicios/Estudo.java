@@ -7,7 +7,7 @@ public class Estudo {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Qual o seu nome:");
-        String nome = scanner.nextLine();
+        String name = scanner.nextLine();
         
         System.out.println("Coloque sua primeira nota:");
         double nota1 = scanner.nextDouble();
