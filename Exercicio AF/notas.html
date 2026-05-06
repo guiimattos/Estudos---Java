@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Notas</title>
+    <link rel="stylesheet" href="notas.css">
+</head>
+<body>
+    <main class="page">
+        <section class="calculator" aria-labelledby="titulo">
+            <div class="intro">
+                <p class="eyebrow">Calculo de medias</p>
+                <h1 id="titulo">Sistema de Notas</h1>
+            </div>
+
+            <form id="formNotas" class="form">
+                <div class="grid">
+                    <label>
+                        Nome do aluno
+                        <input type="text" id="nome" placeholder="Ex: Guilherme" required>
+                    </label>
+
+                    <label>
+                        Nota minima
+                        <input type="number" id="notaMinima" min="0" max="10" step="0.1" value="7" required>
+                    </label>
+                </div>
+
+                <div class="grades">
+                    <label>
+                        AC1
+                        <input type="number" id="ac1" min="0" max="10" step="0.1" required>
+                    </label>
+
+                    <label>
+                        AC2
+                        <input type="number" id="ac2" min="0" max="10" step="0.1" required>
+                    </label>
+
+                    <label>
+                        AF
+                        <input type="number" id="af" min="0" max="10" step="0.1" required>
+                    </label>
+
+                    <label>
+                        AG
+                        <input type="number" id="ag" min="0" max="10" step="0.1" required>
+                    </label>
+                </div>
+
+                <div class="weights">
+                    <h2>Pesos das avaliacoes</h2>
+                    <div class="grades">
+                        <label>
+                            Peso AC1
+                            <input type="number" id="pesoAc1" min="0" max="100" step="1" value="25" required>
+                        </label>
+
+                        <label>
+                            Peso AC2
+                            <input type="number" id="pesoAc2" min="0" max="100" step="1" value="25" required>
+                        </label>
+
+                        <label>
+                            Peso AF
+                            <input type="number" id="pesoAf" min="0" max="100" step="1" value="25" required>
+                        </label>
+
+                        <label>
+                            Peso AG
+                            <input type="number" id="pesoAg" min="0" max="100" step="1" value="25" required>
+                        </label>
+                    </div>
+                    <p id="pesoAviso" class="hint">A soma dos pesos deve ser 100%.</p>
+                </div>
+
+                <div class="actions">
+                    <button type="submit">Calcular</button>
+                    <button type="reset" class="secondary">Limpar</button>
+                </div>
+            </form>
+        </section>
+
+        <aside class="result" aria-live="polite">
+            <p class="result-label">Resultado</p>
+            <h2 id="resultadoTitulo">Preencha as notas</h2>
+            <p id="resultadoTexto">A media e a situacao do aluno aparecem aqui.</p>
+            <div class="score">
+                <span>Media final</span>
+                <strong id="mediaFinal">--</strong>
+            </div>
+        </aside>
+    </main>
+
+    <script src="notas.js"></script>
+</body>
+</html>

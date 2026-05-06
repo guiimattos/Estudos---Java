@@ -1,5 +1,8 @@
 package Exercicios;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -10,6 +13,7 @@ public class Af {
         scanner.useLocale(Locale.US); // aceita ponto como separador decimal
 
         System.out.println("=== SISTEMA DE CALCULO DE NOTAS ===\n");
+        executarCurlGet("https://jsonplaceholder.typicode.com/posts/1");
 
         // 1. Pesos das avaliações (AC1, AC2, AF, AG)
         double[] pesos = lerPesos(scanner);
@@ -98,6 +102,34 @@ public class Af {
     }
 
     // ===== Métodos auxiliares =====
+
+    /** Executa um curl GET simples e imprime a resposta no console. */
+    private static void executarCurlGet(String url) {
+        ProcessBuilder processBuilder = new ProcessBuilder("curl", "-s", "-X", "GET", url);
+
+        try {
+            Process processo = processBuilder.start();
+
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(processo.getInputStream()))) {
+                String linha;
+                System.out.println("Resposta do GET:");
+                while ((linha = reader.readLine()) != null) {
+                    System.out.println(linha);
+                }
+                System.out.println();
+            }
+
+            int codigoSaida = processo.waitFor();
+            if (codigoSaida != 0) {
+                System.out.println("Erro ao executar curl. Codigo de saida: " + codigoSaida);
+            }
+        } catch (IOException e) {
+            System.out.println("Nao foi possivel executar o curl GET: " + e.getMessage());
+        } catch (InterruptedException e) {
+            System.out.println("Execucao do curl GET interrompida: " + e.getMessage());
+            Thread.currentThread().interrupt();
+        }
+    }
 
     /**
      * Lê os 4 pesos (AC1, AC2, AF, AG). A soma deve ser 100.
